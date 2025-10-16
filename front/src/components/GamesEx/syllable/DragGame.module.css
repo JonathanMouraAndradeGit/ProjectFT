@@ -1,0 +1,126 @@
+.mainCGB {
+    width: 100%;
+    height: 100vh;
+    /*border: 2px solid purple;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.SilabSlots {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*border: 2px solid red;*/
+    padding: 5px;
+    gap: 5px;
+}
+
+.slbsCon {
+    position: relative;
+    width: 100%;
+    height: 30%;
+    display: grid;
+    padding: 5px;
+    gap: 5px;
+    grid-template-columns: repeat(5,1fr);
+    grid-auto-rows: calc(100% / 2);
+    /*border: 2px solid orange;*/
+    background-color: rgb(30, 30, 30);
+}
+
+.Slot {
+    height: 100%;
+    aspect-ratio: 0.4/1;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*border: 2px solid black;*/
+    overflow: hidden;
+    border-radius: 5px;
+    background-color: lightgray;
+}
+.mdv {/*
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 9;
+    background-color: #f1f1f1;
+    pointer-events: auto;*/
+    position: relative;
+    width: 100%;
+    height: 100%;
+    pointer-events: auto;
+    padding: 10px;
+    cursor: move;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 250%;
+    z-index: 10;
+    /*background-color: #2196F3;*/
+    color: #fff;
+}
+.mdvH{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    pointer-events: auto;
+    padding: 10px;
+    cursor: move;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 250%;
+    z-index: 10;
+    /*background-color: #2196F3;*/
+    background-image: linear-gradient(to right,orange,red);
+    color: #fff;
+
+}
+.mdvH > *{
+    user-select: none;
+}
+.BtnBar{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*border: 2px solid red;*/
+}
+.BtnBar > button{
+    height: 50%;
+    aspect-ratio: 1/0.3;
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    font-size: 1.5vw;
+    text-transform: uppercase;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+}
+.BtnBar > button:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+.HeaderBuild{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(30, 30, 30);
+}
+.HeaderBuild > p{
+    color: white;
+    font-size: 5vw;
+    text-transform: uppercase;
+}

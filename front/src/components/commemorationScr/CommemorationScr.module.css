@@ -1,0 +1,168 @@
+.MainComC{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    /*border: 2px solid red;*/
+}
+.ClsComC{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+.boxCon{
+    height: 50%;
+    aspect-ratio: 1/1;
+    /*border: 2px solid gray;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    transform-style: preserve-3d;
+    transform: rotateY(50deg);
+
+    animation-name: anim1;
+    animation-delay: 0s;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes anim1 {
+    from{
+        transform: rotateY(0deg);
+    }to{
+        transform: rotateY(360deg);
+    }
+}
+.boxCon > .Screen{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    aspect-ratio: 1/1;
+    transform-style: preserve-3d ;
+}
+.boxCon > .Screen:nth-child(1){
+    height: 100%;
+    aspect-ratio: 1/1;
+    /*border: 2px solid red;*/
+    transform: translateZ(100%);
+}
+.boxCon > .Screen:nth-child(2){
+    height: 100%;
+    aspect-ratio: 1/1;
+    /*border: 2px solid blue;*/
+    transform: rotateY(90deg) translateY(0%) translateX(0%);
+}
+.imgCon{
+    transform: translateY(0%);
+    width: 50%;
+    aspect-ratio: 1/1;
+    /*border: 2px solid red;*/
+    transition: 0.5s;
+    transform-style: preserve-3d;
+}
+.imgCon:global(.Selected){
+    transform: translateY(-250%) !important;
+}
+.imgCon > img{
+    width: 100%;
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotateY(360deg);
+    transition: 5s;
+
+    animation-name: anim2;
+    animation-delay: 0s;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes anim2 {
+    from{
+        transform: rotateY(360deg);
+    }to{
+        transform: rotateY(0deg);
+    }
+}
+.Screen > .WallL{
+    position: absolute;
+    width: 100%;
+    aspect-ratio: 1/1;
+    background-color: rgb(192, 143, 79);
+    /*opacity: 0.5;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0px;
+    transform: translateX(50%) rotateY(90deg) !important;
+    transform-style: preserve-3d;
+}
+.Screen > .WallR{
+    position: absolute;
+    width: 100%;
+    aspect-ratio: 1/1;
+    background-color: rgb(192, 143, 79);
+    /*opacity: 0.5;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform-style: preserve-3d;
+    transform: translateX(-50%) rotateY(-90deg) !important;
+}
+.Screen > .WallL > span{
+    height: 100%;
+    width: 10%;
+    background-color: rgb(169, 120, 53);
+}
+.Screen > .WallR > span{
+    height: 100%;
+    width: 10%;
+    background-color: rgb(169, 120, 53);
+}
+
+.Screen > .WallL > .topOpenBox{
+    transform: translateY(-100%) rotateX(90deg);
+    transition: 0.5s;
+}
+.Screen > .WallR > .topOpenBox{
+    transform: translateY(-100%) rotateX(90deg);
+    transition: 0.5s;
+}
+.Screen > .WallL > .topOpenBox,.Screen > .WallR > .topOpenBox{
+    height: 50%;
+    width: 100%;
+    top: 0px;
+    position: absolute;
+    transform-origin: 50% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(192, 143, 79);
+}
+.Screen > .WallL > .topOpenBox > span,.Screen > .WallR > .topOpenBox > span{
+    height: 10%;
+    width: 100%;
+    background-color: rgb(169, 120, 53);
+    margin-bottom: auto;
+}
+
+.Screen:global(.Selected) > .WallL > .topOpenBox{
+    transform: translateY(-100%) rotateX(-20deg) !important;
+}
+.Screen:global(.Selected) > .WallR > .topOpenBox{
+    transform: translateY(-100%) rotateX(-20deg) !important;
+}
+.ConTBox{
+    background-color: rgb(205, 159, 97) !important;
+}

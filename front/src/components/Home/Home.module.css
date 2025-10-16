@@ -1,0 +1,20 @@
+.HomeContainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.SLCon1 > h3{
+    font-size: 90px;
+    text-align: start;
+    width: 100%;
+    text-transform: uppercase;
+}
+.SLCon1{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}

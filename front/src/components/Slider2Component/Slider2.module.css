@@ -1,0 +1,179 @@
+* {
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.mainC {
+    width: 100%;
+    /*border: 2px solid black;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.mainC > h3:nth-child(1){
+    font-size: 90px;
+    text-align: start;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.SliderCon {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.SliderC {
+    position: absolute;
+    /*border: 2px solid green;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    gap: 3%;
+    padding-block: 10px;
+}
+
+.btn {
+    height: 20%;
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: white;
+    background-color: black;
+    opacity: 0.5;
+    transition: 0.5s;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 20;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+
+.l {
+    left: 0px;
+}
+
+.r {
+    right: 0px;
+}
+
+:global(.ItemSl) {
+    min-width: calc(80% / 3);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 15px;
+    background-color: white;
+    position: relative;
+}
+:global(.ItemSl) > span{
+    font-size: 0px;
+    color: none;
+}
+:global(.ItemSl) > p{
+    position: absolute;
+    writing-mode: vertical-lr;
+    color: white;
+    text-transform: uppercase;
+    font-size: 450%;
+    border-left: 4px solid white;
+    left: 0px;
+    transform: translateX(25%);
+}
+:global(.ItemSl) > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+:global(.ItemSl) > img:not(:global(.deact)){
+    filter: brightness(80%);
+}
+:global(.deact){
+    filter: grayscale(1) blur(4px);
+    opacity: 0.5;
+}
+
+:global(.desloc) {
+    animation-name: anim1;
+    animation-delay: 0s;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+@keyframes anim1 {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(var(--w));
+    }
+}
+.Content{
+    width: 100%;
+    height: 50vh;
+    /*border: 2px solid purple;*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    gap: 10px;
+}
+.Content > img{
+    height: 100%;
+    min-width: 50%;
+    border-radius: 50px;
+    object-fit: cover;
+    object-position: center;
+
+    overflow: hidden;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+.Content > p{
+    text-align: justify;
+}
+
+.BallsC {
+    position: absolute;
+    width: 70%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 30;
+    bottom: 3%;
+    gap: 5px;
+}
+
+:global(.Ball) {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.5s;
+    opacity: 1;
+    aspect-ratio: 1/1;
+    user-select: none;
+    font-size: 0px;
+}

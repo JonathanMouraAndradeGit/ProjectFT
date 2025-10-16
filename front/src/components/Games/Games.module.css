@@ -1,0 +1,25 @@
+.GamesContainer{
+    width: 100%;
+    height: 100vh;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.GamesContainer > h3{
+    font-size: 90px;
+    text-align: start;
+    width: 100%;
+    text-transform: uppercase;
+}
+.GamesCon{
+    width: 100%;
+    padding: 2px;
+    display: grid;
+    gap: 10px;
+    padding: 10px;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: auto;
+    /*border: 2px solid red;*/
+}

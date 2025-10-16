@@ -1,0 +1,98 @@
+.FooterCompC{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(30, 30, 30);
+}
+.FooterCompC > *{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.FooterCompC > *:nth-child(1){
+    flex-direction: column;
+    align-items: flex-start !important;
+    padding: 10px;
+    gap: 10px;
+}
+.FooterCompC > *:nth-child(1) > h3{
+    font-size: 5vw;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bolder;
+} 
+.FooterCompC > *:nth-child(1) > p{
+    color: white;
+}
+.Socials{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 20%;
+    gap: 10px;
+    border-top: 1px solid white;
+    padding-block: 10px;
+}
+.Socials > img{
+    height: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: center;
+    background-color: white;
+    border-radius: 50%;
+    padding: 2px;
+}
+
+.ColCon > table{
+    width: 70%;
+    height: 100%;
+    /*border: 2px solid white;*/
+    flex-direction: column;
+}
+.ColCon > table > thead{
+    width: 100%;
+    height: 30px;
+    flex-direction: column;
+}
+.ColCon > table > thead > tr,.ColCon > table > thead > tr > th,
+.ColCon > table > thead,.ColCon > table,.ColCon > table > tbody > tr,
+.ColCon > table > tbody > tr > td{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ColCon > table > thead > tr,.ColCon > table > thead > tr > th,
+.ColCon > table > tbody > tr > td{
+    width: 100%;
+    height: 100%;
+}
+.ColCon > table > thead > tr > th{
+    color: white;
+    text-transform: uppercase;
+    font-size: 2vw;
+    font-weight: bolder;
+}
+.ColCon > table > tbody{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.ColCon > table > tbody > tr{
+    width: 100%;
+    height: 20px;
+}
+.ColCon > table > tbody > tr > td{
+    color: white;
+    font-size: 0.7vw;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
