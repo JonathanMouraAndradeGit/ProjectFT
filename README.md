@@ -80,9 +80,9 @@ npm install
 # Rode o app
 npm run start
 
+
+---
+
 ## 🧩 vídeo
 https://github.com/user-attachments/assets/39ee76b8-bee1-41d9-a276-97813a48bcc2
-
-
-
 
