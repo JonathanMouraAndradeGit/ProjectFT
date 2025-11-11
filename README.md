@@ -1,4 +1,4 @@
-# 🎓 Projeto Educacional: Quiz, Jogo da Memória e Jogo de Sílabas
+# Projeto FT : Quiz, Jogo da Memória e Jogo de Sílabas
 Este é um projeto educacional desenvolvido com o objetivo de auxiliar crianças no aprendizado de forma interativa e divertida, através de três jogos principais: **Quiz**, **Jogo da Memória** e **Jogo de Sílabas**.
 
 A aplicação é composta por:
