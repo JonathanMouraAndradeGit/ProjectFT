@@ -7,6 +7,7 @@ export default function Quest(props){
     let [selectedA,setSelectedA] = useState(0)
     let [quest,setQuest] = useState()
     let [qtd,setQtd] = useState([])
+    let [cur,setCur] = useState(1)
     const ref = useRef()
     useEffect(()=>{
         console.log(props.questionBK)
@@ -47,6 +48,7 @@ export default function Quest(props){
             rmvResults()
             console.log(props.questionBK.id)
             props.forwardF(answerObject)
+            setCur(cur+1)
         },(500*4))
     }
     function markResults(correctObj){
@@ -69,7 +71,7 @@ export default function Quest(props){
     return (
         <div className={Style.ConQ}>
             <div className={Style.QTxt}>
-                <span>1</span><p>{quest}</p>
+                <span>{cur}</span><p>{quest}</p>
             </div>
             <div className={Style.quest} ref={ref}>
                 {
