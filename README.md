@@ -1,5 +1,4 @@
 # 🎓 Projeto Educacional: Quiz, Jogo da Memória e Jogo de Sílabas
-![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow?style=for-the-badge&logo=github)
 Este é um projeto educacional desenvolvido com o objetivo de auxiliar crianças no aprendizado de forma interativa e divertida, através de três jogos principais: **Quiz**, **Jogo da Memória** e **Jogo de Sílabas**.
 
 A aplicação é composta por:
@@ -9,7 +8,7 @@ A aplicação é composta por:
 - 📊 Banco de dados: SQLite
 
 ---
-
+## 🚧 Status do Projeto
 ## 🚀 Funcionalidades
 
 - 🎮 Jogo de Quiz com perguntas e respostas
