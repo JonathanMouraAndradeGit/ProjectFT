@@ -58,6 +58,10 @@ Prefixo base: `/usr`
 ## 🧩 vídeo
 https://github.com/user-attachments/assets/39ee76b8-bee1-41d9-a276-97813a48bcc2
 
+
+https://github.com/user-attachments/assets/096f9d8e-1578-4be6-9ea7-6272d40174ec
+
+
 ## 🛠️ Como rodar o projeto
 
 ### 🔧 Backend (NestJS)
