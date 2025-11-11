@@ -9,6 +9,7 @@ A aplicação é composta por:
 
 ---
 ## 🚧 Status do Projeto
+![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow?style=for-the-badge&logo=github)
 ## 🚀 Funcionalidades
 
 - 🎮 Jogo de Quiz com perguntas e respostas
